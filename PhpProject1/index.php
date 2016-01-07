@@ -54,9 +54,9 @@ and open the template in the editor.
             return $won;
         }
          if (winner('x', $squares))
-            echo 'You win.';
+            echo 'X wins.';
         else if (winner('o', $squares))
-            echo 'I win.';
+            echo 'O wins.';
         else
             echo 'No winner yet.';
         ?>
