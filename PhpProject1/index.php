@@ -11,12 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        if (winner('x', $squares))
-            echo 'You win.';
-        else if (winner('o', $squares))
-            echo 'I win.';
-        else
-            echo 'No winner yet.';
+       
 
         $position = $_GET['board'];
         $squares = str_split($position);
@@ -58,6 +53,12 @@ and open the template in the editor.
             }
             return $won;
         }
+         if (winner('x', $squares))
+            echo 'You win.';
+        else if (winner('o', $squares))
+            echo 'I win.';
+        else
+            echo 'No winner yet.';
         ?>
     </body>
 </html>
